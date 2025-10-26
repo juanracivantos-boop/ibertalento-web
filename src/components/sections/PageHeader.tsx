@@ -38,24 +38,10 @@ export function PageHeader({
       <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/75 to-black/70" aria-hidden="true" />
       <div className="absolute inset-0 bg-gradient-to-tr from-brand-red/30 via-transparent to-transparent opacity-50" aria-hidden="true" />
       
-      {/* Content con LOGO GRANDE */}
+      {/* Content centrado sin logo */}
       <div className="relative py-20 md:py-28 w-full">
-        <div className="container-custom">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Logo de Ibertalento - MÁS GRANDE */}
-            <div className="mb-10 flex justify-center">
-              <div className="relative h-24 w-96 md:h-32 md:w-[32rem] lg:h-40 lg:w-[40rem] drop-shadow-2xl">
-                <Image 
-                  src="/assets/logo-gris-transparente.svg" 
-                  alt="Ibertalento"
-                  fill
-                  className="object-contain"
-                  priority
-                  unoptimized
-                />
-              </div>
-            </div>
-            
             {/* Title H1 BLANCO con drop shadow */}
             <h1 className="mb-6 text-white drop-shadow-2xl text-5xl md:text-6xl lg:text-7xl font-bold">
               {title}
