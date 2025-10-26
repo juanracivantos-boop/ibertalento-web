@@ -1,17 +1,18 @@
 <svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Elemento gráfico con formas trapezoidales apiladas -->
+  <!-- Banda superior gris oscura con líneas horizontales -->
+  <path d="M20 25 L70 20 L110 30 L105 50 L65 55 L25 50 L20 25 Z" fill="#4B5563"/>
   
-  <!-- Capa superior - gris oscuro -->
-  <path d="M20 20 L60 15 L100 25 L95 35 L55 40 L20 35 L20 20 Z" fill="#374151"/>
+  <!-- Líneas horizontales en banda superior -->
+  <path d="M25 30 L65 28 L105 33 L100 35 L60 37 L25 35 L25 30 Z" fill="#6B7280" opacity="0.6"/>
+  <path d="M25 35 L65 33 L105 38 L100 40 L60 42 L25 40 L25 35 Z" fill="#9CA3AF" opacity="0.4"/>
+  <path d="M25 40 L65 38 L105 43 L100 45 L60 47 L25 45 L25 40 Z" fill="#D1D5DB" opacity="0.2"/>
   
-  <!-- Capa media-superior - gris medio -->
-  <path d="M25 30 L65 25 L105 35 L100 45 L60 50 L25 45 L25 30 Z" fill="#6B7280"/>
+  <!-- Banda inferior blanca con sombreado -->
+  <path d="M25 40 L75 35 L115 45 L110 65 L70 70 L30 65 L25 40 Z" fill="#F9FAFB"/>
   
-  <!-- Capa media-inferior - gris claro -->
-  <path d="M30 40 L70 35 L110 45 L105 55 L65 60 L30 55 L30 40 Z" fill="#9CA3AF"/>
-  
-  <!-- Capa inferior - blanco -->
-  <path d="M35 50 L75 45 L115 55 L110 65 L70 70 L35 65 L35 50 Z" fill="#F9FAFB"/>
+  <!-- Sombreado volumétrico en banda inferior -->
+  <path d="M30 45 L70 42 L110 47 L105 57 L65 60 L30 57 L30 45 Z" fill="#E5E7EB" opacity="0.3"/>
+  <path d="M30 50 L70 47 L110 52 L105 62 L65 65 L30 62 L30 50 Z" fill="#D1D5DB" opacity="0.2"/>
   
   <!-- Texto IBERTALENTO con outline -->
   <text x="140" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#F9FAFB" stroke="#374151" stroke-width="2" paint-order="stroke fill">IBERTALENTO</text>
