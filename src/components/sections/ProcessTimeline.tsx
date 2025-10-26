@@ -35,7 +35,7 @@ const steps = [
   {
     n: 4,
     title: 'Incorporación',
-    time: 'Sin plazo (mismo día)',
+    time: '',
     icon: Rocket,
     bg: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80&fit=crop',
     description: 'El candidato se incorpora el mismo día de su llegada a España.'
