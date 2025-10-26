@@ -46,7 +46,7 @@ export function PageHeader({
             <div className="mb-10 flex justify-center">
               <div className="relative h-24 w-96 md:h-32 md:w-[32rem] lg:h-40 lg:w-[40rem] drop-shadow-2xl">
                 <Image 
-                  src="/assets/logo-ibertalento-transparente.svg" 
+                  src="/assets/logo-gris-transparente.svg" 
                   alt="Ibertalento"
                   fill
                   className="object-contain"
