@@ -19,42 +19,8 @@ const sizeClasses = {
 
 export function Logo({ variant = 'full', size = 'md', className = '', href = '/' }: LogoProps) {
   const dimensions = sizeClasses[size]
-  const [logoPath, setLogoPath] = useState<string>('/assets/logo.svg')
-  const [logoChecked, setLogoChecked] = useState<boolean>(false)
-
-  // Verificar qué logo existe
-  useEffect(() => {
-    const checkLogo = async () => {
-      // Lista de logos a verificar en orden de prioridad
-      const logosToCheck = [
-        '/assets/logo-ibertalento-transparente.png',
-        '/assets/logo-ibertalento.png',
-        '/assets/logo-ibertalento.webp',
-        '/assets/logo.svg'
-      ]
-
-      for (const path of logosToCheck) {
-        try {
-          const response = await fetch(path, { method: 'HEAD' })
-          if (response.ok) {
-            console.log(`✅ Logo encontrado: ${path} (${response.status})`)
-            setLogoPath(path)
-            setLogoChecked(true)
-            return
-          }
-        } catch (error) {
-          console.warn(`⚠️ Logo no encontrado: ${path}`)
-        }
-      }
-
-      // Si ninguno funciona, usar el SVG por defecto
-      console.error('❌ No se encontró ningún logo válido. Usando fallback.')
-      setLogoPath('/assets/logo.svg')
-      setLogoChecked(true)
-    }
-
-    checkLogo()
-  }, [])
+  const [logoPath, setLogoPath] = useState<string>('/assets/logo-ibertalento-transparente.svg')
+  const [logoChecked, setLogoChecked] = useState<boolean>(true)
 
   // Mostrar mensaje en consola solo una vez
   useEffect(() => {

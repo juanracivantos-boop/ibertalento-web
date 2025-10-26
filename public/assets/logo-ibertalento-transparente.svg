@@ -1,0 +1,30 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Banda roja superior con gradiente -->
+  <defs>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E53E3E;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C5162D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B1C2C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Banda roja superior -->
+  <path d="M20 25 L70 20 L110 30 L105 50 L65 55 L25 50 L20 25 Z" fill="url(#redGradient)"/>
+  
+  <!-- Banda dorada inferior -->
+  <path d="M25 40 L75 35 L115 45 L110 65 L70 70 L30 65 L25 40 Z" fill="url(#goldGradient)"/>
+  
+  <!-- Highlight blanco en banda roja -->
+  <path d="M25 30 L65 27 L95 35 L90 45 L60 48 L30 45 L25 30 Z" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Highlight blanco en banda dorada -->
+  <path d="M30 45 L70 42 L100 50 L95 60 L65 63 L35 60 L30 45 Z" fill="rgba(255,255,255,0.2)"/>
+  
+  <!-- Texto IBERTALENTO con outline blanco -->
+  <text x="140" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#111827" stroke="white" stroke-width="1">IBERTALENTO</text>
+</svg>
