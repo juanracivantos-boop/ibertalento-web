@@ -5,7 +5,7 @@ const stats = [
     icon: Award,
     value: '5 años', 
     label: 'Experiencia legal', 
-    sublabel: 'Como despacho de abogados en extranjería',
+    sublabel: 'Como despacho de abogados expertos en extranjería',
     color: 'from-brand-red to-brand-red-600'
   },
   { 
