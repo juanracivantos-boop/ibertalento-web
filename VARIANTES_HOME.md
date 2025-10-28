@@ -243,3 +243,6 @@ El modelo de negocio es B2B. Las empresas son el cliente de alto valor. Los cand
 **Fecha:** Octubre 2025
 
 
+
+
+

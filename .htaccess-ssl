@@ -1,0 +1,39 @@
+# Configuración SSL y redirección HTTPS
+RewriteEngine On
+
+# Redirigir HTTP a HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Configuración para archivos estáticos de Next.js
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ - [L]
+
+# Servir directorios estáticos
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ - [L]
+
+# Redirigir todas las demás peticiones a index.html (SPA)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
+
+# Configuración de tipos MIME
+<IfModule mod_mime.c>
+    AddType text/html .html
+    AddType text/css .css
+    AddType application/javascript .js
+    AddType image/svg+xml .svg
+    AddType application/xml .xml
+</IfModule>
+
+# Configuración de seguridad SSL
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header always set X-Frame-Options "DENY"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "origin-when-cross-origin"
+</IfModule>
+
+
+

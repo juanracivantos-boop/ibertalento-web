@@ -178,3 +178,6 @@ Y abre: **http://localhost:3000**
 *Última actualización: Quick Win B2B implementado - Diseño dark-first con conversión optimizada*
 
 
+
+
+

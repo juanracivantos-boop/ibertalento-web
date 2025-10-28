@@ -194,3 +194,6 @@ El resto quedará como **plantillas y estructura** para que puedas completar.
 **Última actualización:** Octubre 2025
 
 
+
+
+

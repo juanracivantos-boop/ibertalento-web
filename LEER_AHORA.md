@@ -259,3 +259,6 @@ Estos colores ya están en `tailwind.config.ts` y listos para usar en cualquier 
 **Pregunta:** ¿Se ve bien el hero? ¿Quieres continuar con más quick wins?
 
 
+
+
+

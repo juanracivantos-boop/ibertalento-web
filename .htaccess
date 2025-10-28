@@ -1,0 +1,31 @@
+# Configuración para archivos estáticos de Next.js
+RewriteEngine On
+
+# Forzar actualización de caché
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</IfModule>
+
+# Servir archivos estáticos directamente
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ - [L]
+
+# Servir directorios estáticos
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ - [L]
+
+# Redirigir todas las demás peticiones a index.html (SPA)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
+
+# Configuración de tipos MIME
+<IfModule mod_mime.c>
+    AddType text/html .html
+    AddType text/css .css
+    AddType application/javascript .js
+    AddType image/svg+xml .svg
+    AddType application/xml .xml
+</IfModule>

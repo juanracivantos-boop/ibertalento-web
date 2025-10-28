@@ -122,3 +122,6 @@ Busca la línea que dice `TCP *:hbci (LISTEN)` y ése es tu puerto activo.
 *Si necesitas ayuda, dime qué mensaje de error ves en el navegador o en la terminal.*
 
 
+
+
+

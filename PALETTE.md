@@ -462,3 +462,6 @@ module.exports = {
 **Stack:** Next.js 15 + Tailwind 3.4 + shadcn/ui
 
 
+
+
+

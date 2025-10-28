@@ -226,3 +226,6 @@ Luego abre `http://localhost:3000` (o el puerto que muestre).
 🚀 **¡Tu web está lista, solo necesita que cierres los procesos viejos!**
 
 
+
+
+

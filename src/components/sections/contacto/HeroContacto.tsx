@@ -51,9 +51,9 @@ export function HeroContacto() {
                 size="xl" 
                 variant="secondary"
                 className="group bg-white text-ibertalento-600 hover:bg-ibertalento-50"
-                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.location.href = '/contacto'}
               >
-                Completa el formulario
+                Ver información de contacto
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
